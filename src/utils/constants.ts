@@ -1,0 +1,2 @@
+export const MINIMUM_SEARCH_QUERY_LENGTH = 3;
+export const NUMBER_OF_SEARCH_RESULTS_PER_PAGE = 5;

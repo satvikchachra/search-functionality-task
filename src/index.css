@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.main {
+  margin: 2rem 1rem;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row-gap-1x {
+  row-gap: 0.5rem;
+}
+
+.flex-col-gap-1x {
+  column-gap: 0.5rem;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.searchInputBox {
+  width: 80%;
+}
+
+.iconContainer {
+  width: 1.5rem;
+}
+
+button.iconContainer {
+  cursor: pointer;
+}
+
+.margin {
+  margin: 1rem;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.listContainer {
+  list-style-type: none; /* No bullets */
+  margin: 5.5rem 0 0 0;
+  padding: 1rem 3rem;
+}
+
+.profileImageContainer {
+  width: 5rem;
+  height: 5rem;
+}
+
+.profileImageContainer img {
+  border-radius: 1rem;
+}
+
+.descriptionContainer {
+  padding: 0.5rem 0;
+  width: calc(100% - 5rem);
+}
+
+.viewProfile {
+  font-size: calc(1rem - 2px);
+  background-color: #1976d2;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  text-decoration: none;
+  border-radius: 0.2rem;
+  font-size: 0.88rem;
+}
+
+.listItem {
+  margin: 1rem 0;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 767px) {
+  .listContainer {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5vw;
+    row-gap: 1rem;
+  }
+
+  .listItem {
+    margin: 0;
+    padding: 0.5rem 3rem 0.5rem 0.5rem;
+    width: 40vw;
+  }
+}
+
+.animate-icon {
+  animation: stretch 1s ease-out 0s alternate 1 none running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(0.3);
+    border-radius: 100%;
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fadein 1s ease-out 0s alternate 1 none running;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
