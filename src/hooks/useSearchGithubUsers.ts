@@ -109,7 +109,6 @@ const useSearchGithubUsers = ({
         // Make API call to get search results
         try {
           const {
-            // @ts-ignore
             data: { items },
           } = await getUsersSearchResult(url);
 
